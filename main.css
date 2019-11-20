@@ -1,0 +1,103 @@
+html{
+	height: 100%;
+	margin: 0;
+	
+}
+body{
+	background-color: black;
+	color: white;
+	height: 100%;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.col {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  display: flex;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#bc:hover #overlay1 {
+  bottom: 0;
+  height: 100%;
+}
+#de:hover #overlay2 {
+  bottom: 0;
+  height: 100%;
+}
+#ef:hover #overlay3 {
+  bottom: 0;
+  height: 100%;
+}
+#overlay1 {
+  margin-left: -6px;
+  position: absolute;
+  bottom: 100%;
+  left: 4%;
+  right: 4%;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 115%;
+  height:0;
+  transition: .3s ease;
+}
+#overlay2 {
+  margin-left: -6px;
+  position: absolute;
+  bottom: 100%;
+  left: 4%;
+  right: 4%;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 115%;
+  height:0;
+  transition: .3s ease;
+}
+#overlay3 {
+  margin-left: -6px;
+  position: absolute;
+  bottom: 100%;
+  left: 4%;
+  right: 4%;
+  background-color: rgb(0,0,0,0.4);
+  overflow: hidden;
+  width: 110%;
+  height:0;
+  transition: .3s ease;
+}
+.text{
+	margin-top: 300px;
+	font-weight: bold;
+	font-size: 30px;
+   position: absolute;
+     left:10%;
+    
+      font: normal 200% 'century gothic';
+
+}
