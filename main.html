@@ -14,40 +14,62 @@
 <script src ="js/bootstrap.js"></script>
 <script src ="js/proper.js"></script>
 
+<!--data aos-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--data aos end-->
+
 <title> MY FOOD </title>
 </head>
 
 
 <body>
+
+    <div id="loading" style="position:fixed;top:0;height:100vh;width:100vw;z-index:99999;display:none;margin:0;padding:0;background:#333;text-align:center;">
+        <div style="position:fixed; top: 50vh; left:50vw; transform: translate(-50%,-50%)">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+          <div><p id="bar" style="font-family: 'Lora', serif;" >LOADING</p></div>
+        </div>
+        </div>
+
+
 <div id="Header">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-        <a href="#" class="navbar-brand"><h3>Dreamiaz</h3></a>
+        <a href="#" class="navbar-brand"><h3>THE FOOD VILLA</h3></a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ">
         <a class="nav-link" href="#">Home </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="About.html">About Us</a>
-      </li>
+      
       <li class="nav-item ">
-        <a class="nav-link" href="cocktail.html">Cocktails</a>
+        <a class="nav-link" href="#" onclick="redir('cocktail')">Cocktails</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Meals</a>
+        <a class="nav-link" href="#" onclick="redir('Meal')">Meals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="restuarent.html">Resturants</a>
+        <a class="nav-link" href="#" onclick="redir('restuarent')">Resturants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="redir('About')">Login/SignUp</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <div class="navbar-brand search-box">
+        <input id="search1" type="text" class="search-txt" placeholder="Type here to search" />
+        <a id="btn1" class="search-btn" href="#"  target="_blank" style="text-decoration:none"><i class="fas fa-search"></i></a>
+      </div>
   </div>
 </nav>
     </div>
@@ -60,31 +82,31 @@
           1 of 2
         </div>
        
-        <div class="col" id="bc">
-                <img src="C:\Users\deepa\Desktop\hotel\img\2.jpg">
+        <div data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500" class="col" id="bc">
+                <img src="img\2.jpg">
                 <div id="overlay1">
-                   <div class="text"><b>RESTAURANTS</div></b>
+                   <div class="text"><a href="restuarent.html" style="text-decoration: none;color: white"><b>RESTAURANTS</b></a></div>
                  </div>
         </div>
 
-        <div class="col" id="de">
+        <div data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="col" id="de">
 
-               <img src="C:\Users\deepa\Desktop\hotel\img\1.jpg">
+               <img src="img\1.jpg">
                   <div id="overlay2">
-                   <div class="text"><b>COCKTAILS</div></b>
+                   <div class="text"><a href="cocktail.html" style="text-decoration: none;color: white"><b>COCKTAILS</b></a></div>
                  </div>
         </div>
 
-        <div class="col" id="ef">
-                <img src="C:\Users\deepa\Desktop\hotel\img\6.jpg">
+        <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500" class="col" id="ef">
+                <img src="img\6.jpg">
                    <div id="overlay3">
-                   <div class="text"><b>MEALS</div></b>
+                   <div class="text"><a href="Meal.html" style="text-decoration: none;color: white"><b>MEALS</b></a></div>
                  </div>
         </div>
       </div>
       
 </div>
-<div class="footer"style="padding: 20px 0;background: #9e9e9e61;">
+<div data-aos="fade-up"  data-aos-offset="0" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="footer"style="padding: 20px 0;background: #9e9e9e61;">
              <div class="container">
               <div class="row">
                   <div class="col-md-5">
@@ -97,10 +119,39 @@
                    <a href="https://www.linkedin.com/in/deepali-jindal-50a895192/"><i class="fab fa-linkedin  fa-1x mx-3"style="color:white"></i></a>
                  <a href="https://github.com/Deepali2000"><i class="fab fa-github fa-1x mx-2"style="color:white"></i></a>
                     </div>
+              <div class="col-md-7 text-center text-lg-right mt-4 mt-lg-0">
+                           <p font style ="color:black;">
+                              <b>
+                                 Call me on:     <font style="size: 10px;color:white;">9877953105</font><br>
+                                 Email me on:    <font style="size: 10px;color: white;">deepalijindal04@gmail.com</font><br></b>
+                            </p>
+                    </div>
+
 </div>
 </div>
 </div>
-   </body></html>
+
+<script>
+    function redir(a){
+      $(document).ready(function(){
+        $("#loading").css("display","block").fadeOut(10000);
+        setInterval(function(){
+          window.location = a+".html";
+        },1500);
+      });
+    }
+
+    $("#btn1").click(function(){
+      a=$("#search1").val();
+      a=$("#btn1").attr("href","https://www.google.com/search?source=hp&ei=C3xlXPHUFZG2rQGeor_YCA&q="+a+"&btnK=Google+Search&oq="+a+"&gs_l=psy-ab.3..35i39j0l9.72.265..554...0.0..0.271.905.0j2j2......0....1..gws-wiz.....0..0i67j0i131.b4ZIInDtfmg")
+    });
+</script>
+
+<script>
+  AOS.init();
+</script>
+   </body>
+   </html>
 
 
 

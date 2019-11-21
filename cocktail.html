@@ -8,6 +8,10 @@
     	.card{
     		height: 570px;
     	}
+      body{
+         background: url("img/111.jpg") no-repeat fixed center; 
+         width: 100%;
+      }
     </style>
 </head>
 <header>
@@ -15,265 +19,93 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-   <a href="#" class="navbar-brand"><h3>Dreamiaz</h3></a>
+   <a href="#" class="navbar-brand"><h3>THE FOOD VILLA</h3></a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto pr-5">
       <li class="nav-item pl-3 pr-3">
         <a class="nav-link" href="main.html">Home </a>
       </li>
-      <li class="nav-item pl-3 pr-3">
-        <a class="nav-link" href="About.html">About Us</a>
-      </li>
+     
       <li class="nav-item pl-3 pr-3">
         <a class="nav-link" href="cocktails.html">Cocktails</a>
       </li>
       <li class="nav-item pl-3 pr-3">
-        <a class="nav-link" href="meals.html">Meals</a>
+        <a class="nav-link" href="meal.html">Meals</a>
       </li>
       <li class="nav-item pl-3 pr-3">
         <a class="nav-link" href="restuarent.html">Resturants</a>
       </li>
+          <li class="nav-item">
+        <a class="nav-link" href="#" onclick="redir('About')">Login/SignUp</a>
+      </li>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchDataValue">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="searchData()" id="srchbtn">Search</button>
+    </form>
     </ul>
     
   </div>
 </nav>
 </header>
-<body>
+<body >
+<div id="COCKTAILS" >
+        <div class="container mt-5" style="font-family: cursive;">
+             <span class="bg-dark text-white "style="padding: 10px 20px 10px 20px;">COCKTAILS</span>
+             <hr class="bg-dark" style="border-width: 2px;margin-top: 6px;">
+             <p style="color:white;">A cocktail is an alcoholic mixed drink, which is either a combination of spirits, or one or more spirits mixed with other ingredients such as fruit juice, flavored syrup, or cream. There are various types of cocktails, based on the number and kind of ingredients added.</p>
+            <center><h2 style="color:white;">4 Classic Drinks To Order at Bar</h2></center>
+             <br>
+            <div class="row">
+                  <div class="col-lg-6">
+                  <div class="card bg-white" style="border-color: black;">
+                  <img src ="C:\Users\deepa\Desktop\hotel\img\blackberry-margarita.jpg" width="200" height="80" class="img-fluid m-auto py-3">
+                  <h3 class="text-center text-danger">blackberry-margarita</h3>
+                  <p class="lead text-justify p-3">These margaritas are flavored with a blackberry simple syrup, fresh lime juice, tequila, and orange liqueur. They are a little sweet, a little tart, and just strong enough to make you feel like you're drinking a real margarita (not those syrupy concoctions you get at a restaurant).</p>
+                      
+                  </p>
+                  </div></div>
 
-	<br><br><br>
-    <div id="move" style="padding-left: 90px ">
-	<div class="container row pb-5" id="divRow1">
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-				<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink11">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink12">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top"  alt="Card image cap" id="drink13">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink14">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink15">Alcoholic</h4>
-					</div>
-				</div>
-		    		<p class="card-text" id="drink16">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
+                  <div class="col-lg-6">
+                  <div class="card bg-white" style="border-color: black;">
+                  <img src = "C:\Users\deepa\Desktop\hotel\img\shell-beach-cocktail.jpg" width="157" height="50" class="img-fluid m-auto py-3">
+                  <h3 class="text-center text-danger">Shell Beach</h3>
+                  <p class="lead text-justify p-3">The Shell Beach Cocktail is the perfect beach vacation cocktail recipe made with sparkling Rose' combining homemade Pineapple Ginger Rum and Rose sparkling wine, and orange bitters. This exotic simple but complex combination of flavors is perfect to sip on seas side as you bask in the summer sun.</p>
+                  </div></div>
 
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-		    	<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink21">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink22">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top"alt="Card image cap" id="drink23">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink24">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink25">Alcoholic</h4>
-					</div>
-				</div>
-		    		<p class="card-text" id="drink26">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
+                   <div class="col-lg-6 mt-5">
+                   <div class="card bg-white"style="border-color: black;">
+                   <img src ="C:\Users\deepa\Desktop\hotel\img\special-rum.jpg" width="200" height="80" class="img-fluid m-auto py-3">
+                   <h3 class="text-center text-danger">Spiced Rum Old-Fashioned</h3>
+                   <p class="lead text-justify p-3">The classic Old Fashioned is a simple and easily customizable cocktail base: spirit, sugar, bitters and a garnish. ... Shake: A New Perspective on Cocktails, we developed a twist on the classic recipe that infuses aged rum with fragrant island spices and orange. The result is a unique and warming cold-weather drink.</p>
+                   </div></div>
 
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-		    	<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink31">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink32">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top" alt="Card image cap" id="drink33">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink34">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink35">Alcoholic</h4>
-					</div>
-				</div>
-		    		<p class="card-text" id="drink36">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container row pb-5">
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-				<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink41">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink42">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top" alt="Card image cap" id="drink43">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink44">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink45">Alcoholic</h4>
-					</div>
-				    </div>
-		    		<p class="card-text" id="drink46">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-		    	<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink51">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink52">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top" alt="Card image cap" id="drink53">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink54">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink55">Alcoholic</h4>
-					</div>
-				</div>
-		    		<p class="card-text" id="drink56">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-		    	<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink61">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink62">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top" alt="Card image cap" id="drink63">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink64">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink65">Alcoholic</h4>
-					</div>
-					</div>
-		    		<p class="card-text" id="drink66">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container row pb-5">
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-				<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink71">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink72">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top"  id="drink11" src="https://www.thecocktaildb.com/images/media/drink/rwqxrv1461866023.jpg" alt="Card image cap" id="drink73">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink74">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink75">Alcoholic</h4>
-					</div>
-				    </div>
-		    		<p class="card-text" id="drink76">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-		    	<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink81">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink82">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top" src="https://www.thecocktaildb.com/images/media/drink/rhhwmp1493067619.jpg " alt="Card image cap" id="drink83">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink84">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink85">Alcoholic</h4>
-					</div>
-				</div>
-		    		<p class="card-text" id="drink86">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card" style="width: 18rem;">
-		    	<div class="row pl-4">
-					<div class="col-md-6">
-						<h3 id="drink91">Drink</h3>
-					</div>
-					<div class="col-md-6">
-						<h3 id="drink92">Id</h3>
-					</div>
-				</div>
-		    	<img class="card-img-top" src="https://www.thecocktaildb.com/images/media/drink/xuxpxt1479209317.jpg" alt="Card image cap" id="drink93">
-		  		<div class="card-body">
-		  			<div class="row">
-					<div class="col-md-6">
-						<h4 id="drink94">Category</h4>
-					</div>
-					<div class="col-md-6">
-						<h4 id="drink95">Alcoholic</h4>
-					</div>
-					</div>
-		    		<p class="card-text" id="drink96">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  		</div>
-			</div>
-		</div>
-	</div>
+                    <div class="col-lg-6 mt-5">
+                    <div class="card bg-white"style="border-color: black;">
+                    <img src ="C:\Users\deepa\Desktop\hotel\img\BrandyDaisy.jpg" width="200" height="80" class="img-fluid m-auto py-3" style="height: 150px">
+                    <h3 class="text-center text-danger">Telecom</h3>
+                    <p class="lead text-justify p-3">The daisy family of cocktails is another classic formula in which you can change up the base spirit. While you might enjoy a whiskey or gin daisy, the brandy daisy remains a favorite.
+                     Brandy is, of course, the centerpiece of the recipe, though this one does add a hint of rum. In classic daisy form, you'll also pour curaçao, simple syrup, and lemon juice before topping it with soda. It's quite fascinating.</p>
+                    </div></div>
+            </div>
+        </div>
 </div>
-    <script src="cocktail.js">
+<hr>
+
+<div class="container">
+    <div class="search-button">
+        <h1 id="demo"></h1>       
+        <h3 id="demo1"></h3> 
+       <center><button  class="btn btn-lg search" name="search" onclick="load()" style="border-radius: 20px;">Click for more</button></center>
+        
+    </div>
+    <br>
+
+</div>
+
+
+
+
+
+
+			    <script src="cocktail.js">
     </script></html>

@@ -18,30 +18,31 @@
 </head>
 
 
-<body>
+<body onload="fetchData()">
 <div id="Header">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-        <a href="#" class="navbar-brand"><h3>Dreamiaz</h3></a>
+        <a href="#" class="navbar-brand"><h3>THE FOOD VILLA</h3></a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="#">Home </a>
+        <a class="nav-link" href="main.html">Home </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
+    
       <li class="nav-item ">
         <a class="nav-link" href="cocktail.html">Cocktails</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Meals</a>
+        <a class="nav-link" href="Meal.html">Meals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Dishes</a>
+        <a class="nav-link" href="restuarent.html">Resturants</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="#" onclick="redir('About')">Login/SignUp</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -53,13 +54,10 @@
 
 <div class="container">
 
-<button id="show" onclick="fetchData()">Show MEALS</button>
-<div id="resDetails">
-  <img src="" id="res_img">
-  <h2 id="res_name"></h2>
-  <h3 id="res_id"></h2>
-  <a href="" id="res_url"></a>
-</div>
+        
+       <div id="resDetails">
+
+             </div>
 </div>
 
 
@@ -71,6 +69,6 @@
 
 
 </div>
-<script type="text/javascript" src="resturant.js"></script>
+<script type="text/javascript" src="Meal.js"></script>
 </body>
 </html>

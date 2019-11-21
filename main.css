@@ -1,14 +1,133 @@
 html{
-	height: 100%;
-	margin: 0;
-	
+  height: 100%;
+  margin: 0;
+  
 }
 body{
-	background-color: black;
-	color: white;
-	height: 100%;
+  background-color: black;
+  color: white;
+  height: 100%;
 }
 
+/* preloader animation */
+.bar{
+  width: 6px;
+  height: 60px;
+  background: white;
+  display: inline-block;
+  transform-origin: bottom center;
+  animation: loading 1.5s ease-in-out infinite;
+}
+.bar1{
+  animation-delay: 0.1s;
+}
+.bar2{
+  animation-delay: 0.2s;
+}
+.bar3{
+  animation-delay: 0.3s;
+}
+.bar4{
+  animation-delay: 0.4s;
+}
+.bar5{
+  animation-delay: 0.5s;
+}
+.bar6{
+  animation-delay: 0.6s;
+}
+.bar7{
+  animation-delay: 0.7s;
+}
+.bar8{
+  animation-delay: 0.8s;
+}
+@keyframes loading {
+  0%{
+    transform: scaleY(0.1);
+    background: #fff;
+  }
+  50%{
+    transform: scaleY(1);
+    background: #2ecc71;
+  }
+  100%{
+    transform: scaleY(0.1);
+    background: transparent;
+  }
+}
+#bar{
+  color: white;
+  background-repeat: no-repeat;
+  background: linear-gradient(90deg,#000,#fff,#000);
+  animation: animate 6s linear infinite;
+  background-size: 60%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-size:6vh;
+  margin-left:5vh;
+  letter-spacing:3vh;
+}
+@keyframes animate 
+{
+  0%{
+    background-position: -150%;
+  }
+  100%{
+    background-position: 300%;
+    }
+}
+
+/* Search box css */
+
+.search-box
+{
+  position:absolute;
+  top:2vw;
+  left:35vh;
+  transform:translate(00%,-50%);
+  background:rgb(52, 52, 53);
+  height:3vw;
+  border-radius:10vw;
+  padding:0vw;
+}
+.search-box:hover > .search-txt
+{
+  width:28vw;
+  padding:0 1vw;
+}
+.search-box:hover > .search-btn
+{
+  background:transparent;
+  height:3vw;
+  transition:0.5s;
+}
+.search-btn
+{
+  color:#e84118;
+  float:left;
+  width:3.5vw;
+  height:3.5vw;
+  border-radius:5vw;
+  background:#2f3680;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+.search-txt
+{
+  border:none;
+  background:none;
+  outline:none;
+  float:right;
+  padding:0;
+  color:white;
+  font-size:1.5vw;
+  transition:0.4s;
+  line-height:3vw;
+  width:0vh;
+}
 
 /* Create four equal columns that sits next to each other */
 .col {
@@ -92,9 +211,9 @@ body{
   transition: .3s ease;
 }
 .text{
-	margin-top: 300px;
-	font-weight: bold;
-	font-size: 30px;
+  margin-top: 300px;
+  font-weight: bold;
+  font-size: 30px;
    position: absolute;
      left:10%;
     
