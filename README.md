@@ -25,4 +25,4 @@
 
 ## Meals :-https://www.themealdb.com/api/json/v1/1/categories.php (api link) 
 
-## See the website here:https://deepali2000.github.io/Assessment-project/
+## See the website here:https://deepali2000.github.io/assessment-project/
