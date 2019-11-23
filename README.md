@@ -11,7 +11,6 @@
 ## CSS
 ## BOOTSTRAP
 ## JAVASCRIPT
-## JQUERY
 ## AJAX
 
 # List Of API Used:-
